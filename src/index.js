@@ -25,7 +25,8 @@ app.get('/test', (req,res) => {
 
 app.post('/echo', (req,res) => {
     console.log(req.body);
-    res.status(200).send(`${req.body.command}`);
+    res.status(200).send(`Your results are: 
+    ${req.body.command}`);
 })
 
 registerPort();
